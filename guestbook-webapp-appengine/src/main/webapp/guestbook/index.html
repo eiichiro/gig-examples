@@ -1,0 +1,72 @@
+<!--
+ * Copyright (C) 2011-2014 Eiichiro Uchiumi. All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<script src="../js/jquery-1.10.2.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/respond.min.js"></script>
+		
+		<!-- Guestbook specific CSS styles and JavaScript sources. -->
+		<link href="../css/guestbook.css" rel="stylesheet">
+		<script src="../js/guestbook.js"></script>
+		
+		<title>Guestbook powered by Gig</title>
+	</head>
+	<body>
+	
+		<!-- Navbar for the application name and compose button. -->
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<a class="navbar-brand" href="#">Guestbook</a>
+				<p class="navbar-text">powered by Gig</p>
+				<button type="button" class="btn btn-primary navbar-btn navbar-right" data-toggle="modal" data-target="#compose">
+					<span class="glyphicon glyphicon-edit"></span>
+				</button>
+			</div>
+		</nav>
+		
+		<!-- Display area for the posted comments. By default, comments are aligned with 4 columns 
+		and the number of columns are getting fewer as the device width are getting smaller. -->
+		<div class="container">
+			<div class="row">
+				<div id="col-1" class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col">
+				</div>
+				<div id="col-2" class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col">
+				</div>
+				<div id="col-3" class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col">
+				</div>
+				<div id="col-4" class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col">
+				</div>
+			</div>
+		</div>
+		
+		<!-- Modal for composing a new comment. Fades in to the screen when the compose button is pushed on the navbar. -->
+		<div class="modal fade" id="compose" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Compose new Comment</h4>
+					</div>
+					<div class="modal-body">
+						<p>Please give me your feedback within 200 characters. If you come up with any questions or issues 
+						to be resolved immediately, let me know on the <a href="http://groups.google.com/group/gig-users" target="_blank">
+						mailing list</a> or <a href="https://github.com/eiichiro/gig/issues" target="_blank">GitHub issues</a> page :)</p>
+						<textarea id="compose-comment" class="form-control" rows="3" placeholder="Type your comment here..."></textarea>
+						<div id="compose-alert"></div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button id="compose-post" type="button" class="btn btn-primary">Post comment</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

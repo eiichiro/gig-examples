@@ -11,8 +11,8 @@ import org.eiichiro.gig.Repository;
 import org.eiichiro.jaguar.inject.Inject;
 import org.eiichiro.jaguar.inject.Name;
 
-@Name("gig.examples.guestbook.GuestbookRepository")
 @Repository
+@Name("gig.examples.guestbook.GuestbookRepository")
 public class GuestbookRepository {
 
 	@Inject Session session;

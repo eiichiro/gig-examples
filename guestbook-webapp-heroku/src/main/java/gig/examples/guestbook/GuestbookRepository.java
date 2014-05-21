@@ -8,9 +8,11 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
 
+import org.eiichiro.gig.Repository;
 import org.eiichiro.jaguar.inject.Inject;
 import org.eiichiro.jaguar.inject.Name;
 
+@Repository
 @Name("gig.examples.guestbook.GuestbookRepository")
 public class GuestbookRepository {
 

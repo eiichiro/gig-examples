@@ -8,10 +8,12 @@ import java.util.List;
 import java.util.UUID;
 
 import org.eiichiro.gig.Configuration;
+import org.eiichiro.gig.Service;
 import org.eiichiro.gig.Transactional;
 import org.eiichiro.jaguar.inject.Inject;
 import org.eiichiro.jaguar.inject.Name;
 
+@Service
 @Name("gig.examples.guestbook.GuestbookService")
 public class GuestbookService {
 

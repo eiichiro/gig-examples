@@ -14,10 +14,10 @@ public class _Comment extends Metamodel<Comment> {
 		super(parent, Comment.class, name);
 	}
 
-	public org.eiichiro.acidhouse.metamodel.ComparableProperty<Comment, java.util.Date> date = new org.eiichiro.acidhouse.metamodel.ComparableProperty<Comment, java.util.Date>(this, java.util.Date.class, "date");
-
 	public org.eiichiro.acidhouse.metamodel.ComparableProperty<Comment, java.lang.String> id = new org.eiichiro.acidhouse.metamodel.ComparableProperty<Comment, java.lang.String>(this, java.lang.String.class, "id");
 
 	public org.eiichiro.acidhouse.metamodel.ComparableProperty<Comment, java.lang.String> text = new org.eiichiro.acidhouse.metamodel.ComparableProperty<Comment, java.lang.String>(this, java.lang.String.class, "text");
+
+	public org.eiichiro.acidhouse.metamodel.ComparableProperty<Comment, java.util.Date> date = new org.eiichiro.acidhouse.metamodel.ComparableProperty<Comment, java.util.Date>(this, java.util.Date.class, "date");
 
 }
